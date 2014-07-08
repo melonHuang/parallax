@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>网站项目名称-网站名称</title>
+<link href="http://static.qhimg.com/!c957e3af/reset.css" rel="stylesheet" />
+<link href="*.css" rel="stylesheet" />
+	<style>
+		#div1, #div2, #div3 {
+			position: relative;
+			height: 585px;
+		}
+
+		h1 {
+			color: white;
+			font-size: 100px;
+			font-weight: bolder;
+			padding: 200px 200px;
+		}
+
+		.parallax-bg {
+			background-attachment: fixed;
+			position: absolute;
+			top: 0;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+
+			background-repeat: no-repeat;
+		}
+
+		.bg1 {
+			background-image: url(sohp_hero.jpg);			
+		}
+
+		.bg2 {
+			background-image: url(sohp_lens.jpg);
+		}
+
+		.bg3 {
+			background-image: url(sohp_flower.jpg);
+		}
+	</style>
+	<script src="jquery-1.10.2.js"></script>
+	<script src="parallax.js"></script>
+</head>
+<body>
+<div id="doc">
+    <div id="hd">
+        
+    </div>
+    <div id="bd">
+        <div id="div1">       	
+        	<div class="parallax-bg bg1" data-parallax-ratio="0.8">
+        		<h1>DIV1</h1>
+        	</div>
+        </div>
+        <div id="div2">    	
+        	<div class="parallax-bg bg2" data-parallax-ratio="0.8">
+        		<h1>DIV2</h1>
+        	</div>
+        </div>
+        <div id="div3">       	
+        	<div class="parallax-bg bg3" data-parallax-ratio="0.8">
+        		<h1>DIV3</h1>
+        	</div>
+        </div>
+    </div>
+    <div id="ft">
+        
+    </div>
+</div>
+<script>
+	$('.parallax-bg').parallax();
+</script>
+</body>
+</html>
